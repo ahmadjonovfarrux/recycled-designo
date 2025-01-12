@@ -1,0 +1,151 @@
+.contact__hero {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.contact__hero__container {
+  border-radius: 1.5rem;
+  background-color: $primary-peach-color;
+  background-image: url(../../images/contact/desktop/bg-pattern-hero-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  padding: 5.5rem 9rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 8rem;
+}
+
+.contact__content {
+  color: $white;
+}
+
+.contact__title {
+  font-weight: 500;
+  font-size: $large-h1-fs;
+  line-height: $large-h1-lh;
+  margin-bottom: 3.2rem;
+}
+
+.contact__text {
+  width: 44.5rem;
+  font-weight: 400;
+  font-size: $normal-fs;
+  line-height: $normal-lh;
+}
+
+.contact__info > form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.contact__input {
+  width: 38rem;
+  height: 3.8rem;
+  background-color: #e7826ba9;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid $white;
+}
+
+.contact__input::placeholder {
+  color: $white;
+  opacity: 50%;
+}
+
+.contact__input:hover {
+  border-bottom: 2px solid $white;
+}
+
+.contact__comment {
+  width: 38rem;
+  height: 3.8rem;
+  background-color: $primary-peach-color;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid $white;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.contact__comment:hover {
+  border-bottom: 2px solid $white;
+}
+
+.contact__comment::placeholder {
+  color: $white;
+  opacity: 50%;
+}
+.contact__btn {
+  padding: 1.7rem 4.7rem;
+  margin-left: 27rem;
+}
+
+.countires {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+// contact media
+@media screen and (max-width: 980px) {
+  .contact__text {
+    max-width: 57.3rem;
+    width: 100%;
+  }
+  .contact__content {
+    margin-bottom: 4rem;
+  }
+
+  .contact__input {
+    width: 57.3rem;
+  }
+
+  .contact__comment {
+    width: 57.3rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .contact__input {
+    max-width: 573px;
+    width: 100%;
+  }
+
+  .contact__comment {
+    width: 100%;
+    max-width: 573px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .contact__hero__container {
+    padding: 5.5rem 2rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  .contact__title {
+    font-weight: 500;
+    font-size: $mobile-large-fs;
+    line-height: $mobile-large-lh;
+    margin-bottom: 2.4rem;
+    text-align: center;
+  }
+
+  .contact__text {
+    max-width: 327px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact__input {
+    width: 32.7rem;
+  }
+
+  .contact__comment {
+    width: 32.7rem;
+  }
+  .contact__btn {
+    margin-left: 21rem;
+  }
+}
