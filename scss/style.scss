@@ -11,6 +11,7 @@
 
 @import "./layout/header";
 @import "./layout/footer";
+@import "./pages/webd";
 
 .hero {
   margin-bottom: 8rem;
@@ -255,10 +256,13 @@
 .work__info__container {
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 3rem;
 }
 
 .work__info__box {
+  width: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
