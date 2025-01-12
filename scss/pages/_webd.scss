@@ -1,0 +1,38 @@
+.webd__hero {
+  //   padding-top: 6rem;
+  //   padding-bottom: 6rem;
+}
+
+.collection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 3rem;
+}
+
+.collection__item {
+}
+.collection__img {
+  width: 35rem;
+  height: 32rem;
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.collection__content {
+  // width: 35rem;
+  padding: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 0 0 1.5rem 1.5rem;
+  background-color: $collection-bg-color;
+}
+
+.collection__title {
+  color: $primary-peach-color;
+}
+
+.collection__text {
+  color: $dark-grey;
+}
