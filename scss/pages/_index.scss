@@ -1,0 +1,279 @@
+.webd__container {
+  background-image: url(../../images/web-design/desktop/bg-pattern-intro-web.svg);
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+.design__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 6.4rem;
+  padding-bottom: 6.4rem;
+  background-color: $primary-peach-color;
+  color: $white;
+  border-radius: 1.5rem;
+}
+
+.design__title {
+  font-weight: 500;
+  font-size: $large-h1-fs;
+  line-height: $large-h1-lh;
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+.design__text {
+  width: 45rem;
+  text-align: center;
+  font-weight: 400;
+  font-size: $normal-fs;
+  line-height: $normal-lh;
+}
+
+// Design media
+@media screen and (max-width: 475px) {
+  .webd__container {
+    background-image: url(../../images/oval.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    object-fit: cover;
+  }
+
+  .design__container {
+    padding-top: 10.5rem;
+    padding-bottom: 10.5rem;
+  }
+
+  .design__title {
+    font-size: $mobile-large-fs;
+    line-height: $mobile-large-lh;
+    margin-bottom: 2rem;
+  }
+
+  .design__text {
+    width: 33rem;
+    font-size: $btn-fs;
+    line-height: $btn-lh;
+    text-align: center;
+  }
+}
+
+// Project View section
+.project__view {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(54rem, 1fr));
+  gap: 3rem;
+  margin-bottom: 8rem;
+}
+
+.project__view__item {
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.5rem;
+}
+
+.project__view__item:nth-child(1) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../../images/home/desktop/image-app-design.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../../images/home/desktop/image-app-design.jpg);
+  }
+
+  &:active {
+    background-image: linear-gradient(
+        rgba(231, 129, 107, 0.5),
+        rgba(231, 129, 107, 0.5)
+      ),
+      url(../../images/home/desktop/image-app-design.jpg);
+  }
+}
+
+.project__view__item:nth-child(2) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../../images/home/desktop/image-graphic-design.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../../images/home/desktop/image-graphic-design.jpg);
+  }
+
+  &:active {
+    background-image: linear-gradient(
+        rgba(231, 129, 107, 0.5),
+        rgba(231, 129, 107, 0.5)
+      ),
+      url(../../images/home/desktop/image-graphic-design.jpg);
+  }
+}
+
+.project__view__title {
+  font-weight: 500;
+  font-size: $large-h2-fs;
+  line-height: $large-h2-lh;
+  margin-bottom: 2.4rem;
+  color: $white;
+  text-transform: uppercase;
+}
+.project__view__text {
+  font-weight: 400;
+  font-size: $btn-fs;
+  line-height: $btn-lh;
+  color: $white;
+  text-transform: uppercase;
+}
+
+// Project__view media
+@media screen and (max-width: 590px) {
+  .project__view {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin-bottom: 8rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .project__view__title {
+    font-size: $small-h2-fs;
+    line-height: $small-h2-lh;
+    margin-bottom: 2.4rem;
+  }
+  .project__view__text {
+    font-size: $btn-fs;
+    line-height: $btn-lh;
+  }
+}
+
+// Collection
+.collection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  column-gap: 3rem;
+  row-gap: 2.4rem;
+  padding-top: 6rem;
+  padding-bottom: 8rem;
+}
+
+.collection__img {
+  width: 100%;
+  height: 32rem;
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.collection__content {
+  padding: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 0 0 1.5rem 1.5rem;
+  background-color: $collection-bg-color;
+  color: $dark-grey;
+}
+
+.collection__content:hover {
+  background-color: $primary-peach-color;
+  .collection__title {
+    color: $white;
+  }
+  .collection__text {
+    color: $white;
+  }
+}
+
+.collection__title {
+  font-weight: 500;
+  font-size: $h3-fs;
+  line-height: $h3-lh;
+  margin-bottom: 1.6rem;
+  color: $primary-peach-color;
+}
+
+.collection__text {
+  font-weight: 400;
+  font-size: $normal-fs;
+  line-height: $normal-lh;
+  color: $dark-grey;
+}
+
+@media screen and (max-width: 800px) {
+  .collection__item {
+    display: flex;
+
+    .collection__img {
+      border-radius: 1.5rem 0 0 1.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .collection__img {
+    width: 100%;
+    max-width: calc(339px - 18%);
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .collection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .collection__item {
+    display: flex;
+    flex-direction: column;
+
+    .collection__img {
+      max-width: 32rem;
+      width: 100%;
+      border-radius: 1.5rem 1.5rem 0 0;
+    }
+
+    .collection__content {
+      max-width: 32rem;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .collection__content {
+    padding: 2.8rem;
+    background-color: $collection-bg-color;
+    color: $dark-grey;
+  }
+}
+
+//   APP DESIGN
+
+.web__design__item:nth-child(1) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../../images/home/desktop/image-web-design-small.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  &:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../../images/home/desktop/image-web-design-small.jpg);
+  }
+
+  &:active {
+    background-image: linear-gradient(
+        rgba(231, 129, 107, 0.5),
+        rgba(231, 129, 107, 0.5)
+      ),
+      url(../../images/home/desktop/image-web-design-small.jpg);
+  }
+}
