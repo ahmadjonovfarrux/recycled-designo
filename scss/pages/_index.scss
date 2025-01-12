@@ -258,7 +258,11 @@
 }
 
 //   APP DESIGN
-
+.appd__container {
+  background-image: url(../../images/app-design/desktop/bg-pattern-intro-app.svg);
+  background-repeat: no-repeat;
+  background-position: center left;
+}
 .web__design__item:nth-child(1) {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../../images/home/desktop/image-web-design-small.jpg);
@@ -275,5 +279,49 @@
         rgba(231, 129, 107, 0.5)
       ),
       url(../../images/home/desktop/image-web-design-small.jpg);
+  }
+}
+
+.app__design__item:nth-child(2) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../../images/home/desktop/image-app-design.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  &:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../../images/home/desktop/image-app-design.jpg);
+  }
+
+  &:active {
+    background-image: linear-gradient(
+        rgba(231, 129, 107, 0.5),
+        rgba(231, 129, 107, 0.5)
+      ),
+      url(../../images/home/desktop/image-app-design.jpg);
+  }
+}
+
+// GRAPHIC DESIGN SECTION
+.graphicd__container {
+  background-image: url(../../images/graphic-design/desktop/bg-pattern-intro-graphic.svg);
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+.app__design__item:nth-child(2) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../../images/home/desktop/image-app-design.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  &:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../../images/home/desktop/image-app-design.jpg);
+  }
+
+  &:active {
+    background-image: linear-gradient(
+        rgba(231, 129, 107, 0.5),
+        rgba(231, 129, 107, 0.5)
+      ),
+      url(../../images/home/desktop/image-app-design.jpg);
   }
 }
