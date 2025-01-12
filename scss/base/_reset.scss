@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 *::after,
 *::before {
   margin: 0;
@@ -35,9 +40,10 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-//   font-family: ;
-//   font-weight: ;
-//   line-height: ;
+  font-family: "Jost";
+  font-weight: 400;
+  font-size: $normal-fs;
+  line-height: $normal-lh;
 }
 
 main {
@@ -46,9 +52,40 @@ main {
 
 .container {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 30px;
   padding-right: 30px;
+}
+
+.dark-btn {
+  display: inline-block;
+  padding: 1.8rem 2.5rem 1.6rem 2.4rem;
+  background-color: $primary-peach-color;
+  color: $white;
+  text-transform: uppercase;
+  border-radius: 0.8rem;
+  font-weight: 500;
+  font-size: $btn-fs;
+  line-height: $btn-lh;
+  letter-spacing: 1px;
+}
+
+.dark-btn:hover {
+  background: $light-peach-color;
+}
+
+.light-btn {
+  display: inline-block;
+  padding: 1.8rem 2.5rem 1.6rem 2.4rem;
+  background-color: $white;
+  color: $dark-grey;
+  text-transform: uppercase;
+  border-radius: 0.8rem;
+}
+
+.light-btn:hover {
+  background: $light-peach-color;
+  color: $white;
 }
